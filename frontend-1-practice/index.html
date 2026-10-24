@@ -1,26 +1,216 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Выбор даты и времени</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!--
-      ЗАДАНИЕ
-      ========
-      Сверстать страницу выбора даты и времени по своему макету.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Север — Выбор даты и времени</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-      Пока это только вёрстка. Никакого JavaScript — ни кликов,
-      ни переходов, ни выбора дня. Всё статично.
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="#">
+                <span class="logo__icon">C</span>
 
-      Стили пишите в styles.css. Разметку — здесь.
-    -->
+                <span class="logo__text">
+                    <strong>СЕВЕР</strong>
+                    <small>СТУДИЯ МУЖСКОГО СТИЛЯ</small>
+                </span>
+            </a>
 
-    <div class="page">
-      <!-- Начните отсюда. Разметьте шапку, основную область
-           с календарём и слотами, подвал. -->
-    </div>
-  </body>
+            <nav class="navigation">
+                <a href="#">Услуги</a>
+                <a href="#">Команда</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Контакты</a>
+            </nav>
+
+            <button class="header__button">
+                Запись →
+            </button>
+        </div>
+    </header>
+
+    <section class="steps">
+        <div class="container steps__inner">
+            <div class="steps__title">
+                <span>ОНЛАЙН-ЗАПИСЬ</span>
+                <strong>Этап 3 из 5</strong>
+            </div>
+
+            <div class="steps__list">
+                <div class="step step--done">
+                    <span>✓</span>
+                    <p>Мастер</p>
+                </div>
+
+                <div class="step step--done">
+                    <span>✓</span>
+                    <p>Услуга</p>
+                </div>
+
+                <div class="step step--active">
+                    <span>3</span>
+                    <p>Дата и время</p>
+                </div>
+
+                <div class="step">
+                    <span>4</span>
+                    <p>Контакты</p>
+                </div>
+
+                <div class="step">
+                    <span>5</span>
+                    <p>Проверка</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-heading">
+                <span class="page-heading__label">03 / РАСПИСАНИЕ</span>
+
+                <h1>Когда вам удобно?</h1>
+
+                <p>
+                    Илья · стрижка · 45 минут.
+                    Сначала выберите день, затем время.
+                </p>
+            </div>
+
+            <div class="booking">
+                <section class="calendar">
+                    <div class="calendar__header">
+                        <h2>ОКТЯБРЬ 2026</h2>
+
+                        <div class="calendar__arrows">
+                            <button>‹</button>
+                            <button>›</button>
+                        </div>
+                    </div>
+
+                    <div class="calendar__weekdays">
+                        <span>Пн</span>
+                        <span>Вт</span>
+                        <span>Ср</span>
+                        <span>Чт</span>
+                        <span>Пт</span>
+                        <span>Сб</span>
+                        <span>Вс</span>
+                    </div>
+
+                    <div class="calendar__days">
+                        <span class="calendar__empty"></span>
+                        <span class="calendar__empty"></span>
+                        <span class="calendar__empty"></span>
+
+                        <button class="calendar__day">1</button>
+                        <button class="calendar__day">2</button>
+                        <button class="calendar__day">3</button>
+                        <button class="calendar__day">4</button>
+
+                        <button class="calendar__day">5</button>
+                        <button class="calendar__day">6</button>
+                        <button class="calendar__day">7</button>
+                        <button class="calendar__day calendar__day--selected">8</button>
+                        <button class="calendar__day">9</button>
+                        <button class="calendar__day">10</button>
+                        <button class="calendar__day calendar__day--weekend">11</button>
+
+                        <button class="calendar__day">12</button>
+                        <button class="calendar__day">13</button>
+                        <button class="calendar__day">14</button>
+                        <button class="calendar__day">15</button>
+                        <button class="calendar__day">16</button>
+                        <button class="calendar__day">17</button>
+                        <button class="calendar__day">18</button>
+
+                        <button class="calendar__day">19</button>
+                        <button class="calendar__day">20</button>
+                        <button class="calendar__day">21</button>
+                        <button class="calendar__day">22</button>
+                        <button class="calendar__day">23</button>
+                        <button class="calendar__day">24</button>
+                        <button class="calendar__day">25</button>
+
+                        <button class="calendar__day">26</button>
+                        <button class="calendar__day">27</button>
+                        <button class="calendar__day">28</button>
+                        <button class="calendar__day">29</button>
+                        <button class="calendar__day">30</button>
+                        <button class="calendar__day">31</button>
+                    </div>
+                </section>
+
+                <section class="time">
+                    <h2>Четверг, 8 октября</h2>
+                    <p class="time__description">Выберите свободное время</p>
+
+                    <div class="time__slots">
+                        <button class="time__slot">10:00</button>
+
+                        <button class="time__slot time__slot--busy" disabled>
+                            <strong>10:45</strong>
+                            <small>Занято</small>
+                        </button>
+
+                        <button class="time__slot">11:30</button>
+
+                        <button class="time__slot time__slot--busy" disabled>
+                            <strong>12:15</strong>
+                            <small>Занято</small>
+                        </button>
+
+                        <button class="time__slot">13:00</button>
+
+                        <button class="time__slot time__slot--selected">
+                            14:00
+                        </button>
+
+                        <button class="time__slot">15:00</button>
+
+                        <button class="time__slot">16:30</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="selected-info">
+                Выбрано: 8 октября, 14:00&nbsp; · &nbsp;Илья&nbsp; · &nbsp;45 минут
+            </div>
+
+            <div class="actions">
+                <button class="button button--back">
+                    ← Назад
+                </button>
+
+                <button class="button button--primary">
+                    Подтвердить время →
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <strong>СЕВЕР.</strong>
+                <p>Без лишних слов. В своём стиле.</p>
+            </div>
+
+            <div class="footer__column">
+                <span>ГДЕ МЫ</span>
+                <p>Москва, Лесная улица, 12</p>
+                <small>Каждый день · 10:00–22:00</small>
+            </div>
+
+            <div class="footer__column">
+                <span>СВЯЗЬ</span>
+                <p>+7 (495) 555–28–18</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
