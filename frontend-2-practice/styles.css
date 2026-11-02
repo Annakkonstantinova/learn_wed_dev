@@ -600,7 +600,8 @@ a {
         gap: 25px;
         padding: 30px 0;
     }
-    .calendar__day--disabled {
+}
+.calendar__day--disabled {
     background: #f4f5f7;
     color: #b7c0ca;
     cursor: not-allowed;
@@ -618,4 +619,3 @@ a {
         font-size: 14px;
         padding: 20px 0;
     }
-}
