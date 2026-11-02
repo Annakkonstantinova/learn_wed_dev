@@ -1,14 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Выбор даты и времени</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page">
-      <!-- Перенесите вашу верстку. Удалите статичные данные. Подключите скрипт -->
-    </div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Север — Выбор даты и времени</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="#">
+                <span class="logo__icon">C</span>
+
+                <span class="logo__text">
+                    <strong>СЕВЕР</strong>
+                    <small>СТУДИЯ МУЖСКОГО СТИЛЯ</small>
+                </span>
+            </a>
+
+            <nav class="navigation">
+                <a href="#">Услуги</a>
+                <a href="#">Команда</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Контакты</a>
+            </nav>
+
+            <button class="header__button">
+                Запись →
+            </button>
+        </div>
+    </header>
+
+    <section class="steps">
+        <div class="container steps__inner">
+            <div class="steps__title">
+                <span>ОНЛАЙН-ЗАПИСЬ</span>
+                <strong>Этап 3 из 5</strong>
+            </div>
+
+            <div class="steps__list">
+                <div class="step step--done">
+                    <span>✓</span>
+                    <p>Мастер</p>
+                </div>
+
+                <div class="step step--done">
+                    <span>✓</span>
+                    <p>Услуга</p>
+                </div>
+
+                <div class="step step--active">
+                    <span>3</span>
+                    <p>Дата и время</p>
+                </div>
+
+                <div class="step">
+                    <span>4</span>
+                    <p>Контакты</p>
+                </div>
+
+                <div class="step">
+                    <span>5</span>
+                    <p>Проверка</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-heading">
+                <span class="page-heading__label">03 / РАСПИСАНИЕ</span>
+
+                <h1>Когда вам удобно?</h1>
+
+                <p>
+                    Илья · стрижка · 45 минут.
+                    Сначала выберите день, затем время.
+                </p>
+            </div>
+
+            <div class="booking">
+                <section class="calendar">
+                    <div class="calendar__header">
+                        <h2>ОКТЯБРЬ 2026</h2>
+
+                        <div class="calendar__arrows">
+                          <button class="calendar__prev" type="button">‹</button>
+                          <button class="calendar__next" type="button">›</button>
+                        </div>
+                    </div>
+
+                    <div class="calendar__weekdays">
+                        <span>Пн</span>
+                        <span>Вт</span>
+                        <span>Ср</span>
+                        <span>Чт</span>
+                        <span>Пт</span>
+                        <span>Сб</span>
+                        <span>Вс</span>
+                    </div>
+
+                    <div class="calendar__days">
+                    </div>
+                </section>
+
+                <section class="time">
+                    <h2>Четверг, 8 октября</h2>
+                    <p class="time__description">Выберите свободное время</p>
+
+                    <div class="time__slots">
+                    </div>
+                </section>
+            </div>
+
+            <div class="selected-info">
+            </div>
+
+            <div class="actions">
+                <button class="button button--back">
+                    ← Назад
+                </button>
+
+                <button class="button button--primary">
+                    Подтвердить время →
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <strong>СЕВЕР.</strong>
+                <p>Без лишних слов. В своём стиле.</p>
+            </div>
+
+            <div class="footer__column">
+                <span>ГДЕ МЫ</span>
+                <p>Москва, Лесная улица, 12</p>
+                <small>Каждый день · 10:00–22:00</small>
+            </div>
+
+            <div class="footer__column">
+                <span>СВЯЗЬ</span>
+                <p>+7 (495) 555–28–18</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
