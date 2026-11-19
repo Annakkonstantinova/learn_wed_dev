@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.py[cod]
+salon.db
+.pytest_cache/
+.idea/
+.DS_Store
